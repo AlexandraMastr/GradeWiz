@@ -1,7 +1,7 @@
 # GradeWiz AI Case Study
 
 
-**Live demo:** https://\AlexandraMastr\>.github.io/GradeWiz/
+**Live demo:** https://alexandramastr.github.io/GradeWiz/
 
 To preview locally:
 
