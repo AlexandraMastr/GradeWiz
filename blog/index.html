@@ -5,33 +5,74 @@
   <title>Blog — GradeWiz</title>
   <meta name="description" content="Read our latest case studies, customer stories, and product updates.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- existing Webflow CSS -->
   <link href="../css/normalize.css" rel="stylesheet">
-  <link href="../css/webflow.css" rel="stylesheet">
+  <link href="../css/webflow.css"   rel="stylesheet">
   <link href="../css/gradewiz-a57c7e.webflow.css" rel="stylesheet">
+
+  <!-- teaser overrides (identical to your homepage) -->
   <style>
-    /* teaser tweaks */
-    .section-header { text-align: center; margin-bottom: 24px; }
-    .h2-subtitle { color: #b98d59; font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; }
-    .heading-2 { font-size: 2rem; margin-top: .25em; }
-    .white-box-single { background:#fff; padding:24px; border-radius:12px; }
-    .flex-block-5 { display:flex; align-items:flex-start; gap:16px; }
-    .image-3 { width:240px; border-radius:8px; }
-    .h3-black { font-size:1.25rem; margin:0 0 .5em; }
-    .paragraph { line-height:1.6; color:#333; }
-    .link { display:inline-block; margin-top: .5em; color:#b98d59; text-decoration:none; }
-    .link:hover { text-decoration:underline; }
+    /* ==== Blog teaser overrides ==== */
+    #blog .section-header               { text-align: center; margin-bottom: 24px; }
+    #blog .section-header .h2-subtitle  {
+      color:           #b98d59 !important;
+      font-size:       1rem    !important;
+      text-transform:  uppercase !important;
+      letter-spacing:  .1em     !important;
+    }
+    #blog .section-header .heading-2    {
+      color:           #333    !important;
+      font-size:       2rem    !important;
+      line-height:     1.2     !important;
+      margin-top:      .25em   !important;
+    }
+
+    #blog .white-box-single {
+      background:      #fff                        !important;
+      padding:         24px                        !important;
+      border-radius:   12px                        !important;
+      box-shadow:      0 2px 8px rgba(0,0,0,0.05)  !important;
+      transition:      transform .2s, box-shadow .2s !important;
+    }
+    #blog .white-box-single:hover {
+      transform:       translateY(-2px)               !important;
+      box-shadow:      0 4px 16px rgba(0,0,0,0.08)    !important;
+    }
+    #blog .flex-block-5    { display:flex !important; align-items:flex-start !important; gap:16px !important; }
+    #blog .image-3         { width:240px !important; border-radius:8px !important; }
+    #blog .h3-black        { font-size:1.25rem !important; margin:0 0 .5em !important; }
+    #blog .paragraph       { line-height:1.6 !important; color:#333 !important; }
+    #blog a.link {
+      display: inline-block !important;
+      margin-top: .5em      !important;
+      color: #b98d59        !important;
+      text-decoration: none !important;
+      font-weight: 500      !important;
+    }
+    #blog a.link:hover { text-decoration: underline !important; }
+
+    /* Make the teaser card itself fully clickable */
+    .teaser-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
   </style>
 </head>
+
 <body class="body">
 
-  <!-- NAVBAR (exactly same as root, but link Blog → this page) -->
+  <!-- NAVBAR + PROMO BAR -->
   <section class="header">
-    <div role="banner" class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400"
+    <div role="banner" class="navbar w-nav"
+         data-animation="default" data-collapse="medium" data-duration="400"
          data-easing="ease" data-easing2="ease">
       <div class="w-layout-hflex header-wrapper">
         <div class="header-left">
           <a href="../" class="brand w-nav-brand">
-            <img src="../images/gradewiz-logo.svg" alt="GradeWiz logo" style="width:250px;">
+            <img src="../images/gradewiz-logo.svg" loading="lazy"
+                 alt="GradeWiz logo" style="width:250px;">
           </a>
         </div>
         <div class="header-center">
@@ -44,36 +85,46 @@
           </nav>
         </div>
         <div class="header-right">
-          <a href="/login" class="menu-item-small w-button" style="color:black;border:1px solid black;">Login</a>
+          <a href="/login" class="menu-item-small w-button"
+             style="color:black;border:1px solid black;">Login</a>
           <a href="/login" class="btn-action w-button">Get Free trial</a>
           <div class="w-nav-button"><div class="w-icon-nav-menu"></div></div>
         </div>
       </div>
     </div>
-    <div style="background:#b98d59;padding:10px;text-align:center;font-weight:bold;color:white;">
-      1-month free trials available. <a href="/login" style="color:white;text-decoration:underline;">Get free trial now!</a>
+    <div style="background:#b98d59;padding:10px;text-align:center;
+                font-weight:bold;color:white;">
+      1-month free trials available.
+      <a href="/login" style="text-decoration:underline;color:white;">
+        Get free trial now!
+      </a>
     </div>
   </section>
 
-  <!-- Blog Teaser -->
+  <!-- BLOG TEASER (fully clickable) -->
   <section id="blog" class="page gradbg">
     <div class="section-header">
       <div class="h2-subtitle">Blog</div>
       <h2 class="heading-2">Case Study</h2>
     </div>
     <div class="w-layout-blockcontainer container w-container">
-      <div class="white-box-single">
-        <div class="w-layout-hflex flex-block-5">
-          <img src="../images/ithacaheader.jpg" alt="Ithaca Case Study" class="image-3" loading="lazy">
+      <a href="ithaca-case-study.html" class="white-box-single teaser-link">
+        <div class="flex-block-5">
+          <img src="../images/ithacaheader.jpg"
+               alt="Ithaca Case Study"
+               class="image-3"
+               loading="lazy">
           <div>
-            <h3 class="h3-black">Revolutionizing Assessment at Ithaca High School with GradeWiz AI</h3>
+            <h3 class="h3-black">
+              Revolutionizing Assessment at Ithaca High School with GradeWiz AI
+            </h3>
             <p class="paragraph">
               Ithaca City School District deployed GradeWiz AI in Spring 2025—grading over 5,000 submissions, saving teachers 500+ hours, and delivering instant, unbiased feedback.
             </p>
-            <a href="ithaca-case-study.html" class="link">Read the full case study →</a>
+            <span class="link">Read the full case study →</span>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -81,30 +132,37 @@
   <section class="footer">
     <div class="w-layout-hflex flex-block-6 gradbg">
       <div class="footer-1">
-        <img src="../images/gradewiz-logo.svg" alt="GradeWiz logo" class="image-5" loading="lazy">
+        <img src="../images/gradewiz-logo.svg" loading="lazy"
+             alt="GradeWiz logo" class="image-5">
         <p class="footer-logo-paragraph">GradeWiz</p>
         <div class="w-layout-hflex flex-block-7">
-          <a href="https://www.linkedin.com/company/98695459/" target="_blank"><img src="../images/in.svg" alt="LinkedIn"></a>
-          <a href="https://www.youtube.com/@GradeWiz" target="_blank"><img src="../images/yb.svg" alt="YouTube"></a>
+          <a href="https://www.linkedin.com/company/98695459/" target="_blank">
+            <img src="../images/in.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.youtube.com/@GradeWiz" target="_blank">
+            <img src="../images/yb.svg" alt="YouTube">
+          </a>
         </div>
       </div>
       <div class="footer-2">
         <div class="text-weight-semibold text-color-primary">General</div>
-        <a href="#symphonymodel" class="link">Symphony Model</a>
-        <a href="#features" class="link">Features</a>
-        <a href="#benefits" class="link">Benefits</a>
-        <a href="#contact" class="link">Contact Us</a>
+        <a href="../#symphonymodel" class="link">Symphony Model</a>
+        <a href="../#features"      class="link">Features</a>
+        <a href="../#benefits"      class="link">Benefits</a>
+        <a href="../#contact"       class="link">Contact Us</a>
       </div>
       <div class="footer-3">
         <div class="text-weight-semibold text-color-primary">About Us</div>
-        <a href="../about-us.html" class="link">Our Story</a>
+        <a href="../about-us.html"      class="link">Our Story</a>
         <a href="../about-us.html#vision" class="link">Our Vision</a>
-        <a href="https://drive.google.com/file/d/1NKoiIL1RyEfr1OnKNgOdy-s5MG1xo1xH/view?usp=sharing" target="_blank" class="link">Our Pamphlet</a>
+        <a href="https://drive.google.com/file/d/1NKoiIL1RyEfr1OnKNgOdy-s5MG1xo1xH/view?usp=sharing"
+           target="_blank"
+           class="link">Our Pamphlet</a>
       </div>
       <div class="footer-4">
         <div class="text-weight-semibold text-color-primary">Legal</div>
         <a href="../privacy.html" class="link">Privacy Policy</a>
-        <a href="../terms.html" class="link">Terms of Use</a>
+        <a href="../terms.html"   class="link">Terms of Use</a>
       </div>
     </div>
     <div class="div-block-5">
@@ -116,9 +174,14 @@
     </div>
   </section>
 
+  <!-- Webflow JS -->
   <script src="../js/webflow.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 

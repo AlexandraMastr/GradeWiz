@@ -1574,4 +1574,41 @@ h4 {
     margin-top: 4px !important;
     margin-bottom: 24px; /* keep a little breathing room below */
   }
+  /* === Blog teaser should match homepage === */
+/* Section header styling */
+.section-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .section-header .h2-subtitle {
+    color: #b98d59 !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  .section-header .heading-2 {
+    color: #b98d59 !important;
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+    margin-top: .25em;
+  }
+  
+  /* “Read the full case study” link */
+  .link {
+    color: #b98d59 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+  }
+  .link:hover {
+    text-decoration: underline !important;
+  }
+  
+  /* Card hover effect */
+  .white-box-single {
+    transition: transform .2s, box-shadow .2s;
+  }
+  .white-box-single:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
   

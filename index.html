@@ -65,7 +65,14 @@
                 transform: translateX(-100%);
             }
         }
-    </style>
+    
+    /* ——— Make teaser fully clickable ——— */
+    .teaser-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
     <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="pAgzHzeLOIQQ4bxv"
             data-version="062024"></script>
 </head>
@@ -483,28 +490,38 @@
     </div>
 </section>
 
-  <!-- ↓————  Blog Teaser Section ————↓ -->
-  <section id="blog" class="page gradbg">
+
+   <!-- ↓————  Blog Teaser Section ————↓ -->
+   <section id="blog" class="page gradbg">
     <div class="section-header">
       <div class="h2-subtitle">Blog</div>
       <h2 class="heading-2">Case Study</h2>
     </div>
     <div class="w-layout-blockcontainer container w-container">
-      <div class="white-box-single">
-        <div class="w-layout-hflex flex-block-5">
-          <img src="images/ithacaheader.jpg" loading="lazy" alt="Ithaca Case Study" class="image-3">
-          <div style="margin-left:16px;">
-            <h3 class="h3-black">Revolutionizing Assessment at Ithaca High School with GradeWiz AI</h3>
-            <p class="paragraph" style="max-width:400px;">
-              Ithaca City School District deployed GradeWiz AI in Spring 2025—grading over 5,000 submissions, saving teachers 500+ hours, and delivering instant, unbiased feedback.
-            </p>
-            <a href="blog/ithaca-case-study.html" class="link">Read the full case study →</a>
+      <!-- ENTIRE CARD WRAPPED IN LINK -->
+      <a href="blog/ithaca-case-study.html" class="teaser-link">
+        <div class="white-box-single">
+          <div class="w-layout-hflex flex-block-5">
+            <img src="images/ithacaheader.jpg"
+                 loading="lazy"
+                 alt="Ithaca Case Study"
+                 class="image-3">
+            <div style="margin-left:16px;">
+              <h3 class="h3-black">
+                Revolutionizing Assessment at Ithaca High School with GradeWiz AI
+              </h3>
+              <p class="paragraph" style="max-width:400px;">
+                Ithaca City School District deployed GradeWiz AI in Spring 2025—grading over 5,000 submissions, saving teachers 500+ hours, and delivering instant, unbiased feedback.
+              </p>
+              <span class="link">Read the full case study →</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
   <!-- ↑————  Blog Teaser Section ends here ————↑ -->
+  
 
 
 <section class="what-people-think gradbg">

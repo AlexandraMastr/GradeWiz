@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html data-wf-page="6734e03710981908f2e45ffc" data-wf-site="6734e03710981908f2e45fe1">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WW2ZTD56');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <title>Case Study: Revolutionizing Assessment at Ithaca High School</title>
   <meta name="description" content="How GradeWiz AI transformed grading at Ithaca High School—5,000+ submissions, 500+ hours saved, instant feedback.">
@@ -9,32 +17,116 @@
   <link href="../css/webflow.css" rel="stylesheet">
   <link href="../css/gradewiz-a57c7e.webflow.css" rel="stylesheet">
   <style>
-    /* widen, 3/4 + sidebar */
-    .post-layout { display:flex; gap:32px; max-width:1140px; margin:0 auto; padding:40px 20px; }
-    .post-layout article { flex:3; background:#fff; padding:40px; border-radius:12px; }
-    .post-layout aside { flex:1; }
-    .post-image { display:block; max-width:100%; margin:8px auto; border-radius:8px; }
-    .post-header { margin-bottom:8px; }
-    .post-header h1 { font-size:2.25rem; line-height:1.2; }
-    .post-meta { margin-bottom:16px; color:#666; }
-    .list { margin-left:1.25em; line-height:1.6; }
-    .quote { margin:24px 0; padding-left:1em; border-left:4px solid #b98d59; font-style:italic; line-height:1.6; }
-    /* share box */
-    .post-sidebar .white-box { background:#fff; padding:24px; border:1px solid #b98d59; border-radius:8px; text-align:center; }
-    .post-sidebar .white-box h3 { margin-bottom:16px; }
-    .post-sidebar .white-box a { margin:0 8px; display:inline-block; }
-  </style>
-</head>
-<body class="body">
+    /* ==== Layout Overrides ==== */
+    #blog .w-layout-blockcontainer { max-width: 1280px !important; }
+    .post-layout       { display: flex; gap: 32px; }
+    .post-layout article { flex: 4; }
+    .post-layout aside   { flex: 1; }
 
-  <!-- NAVBAR -->
+    /* ==== Card Styling ==== */
+    .white-box-single {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .white-box-single:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    /* ==== Typography ==== */
+    .post-header h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 600;
+      margin-bottom: .25em;
+    }
+    .post-header .post-meta {
+      color: #666;
+      font-size: .9rem;
+      margin-bottom: 1.5em;
+    }
+    .post-section h2 {
+      font-size: 1.75rem;
+      line-height: 1.3;
+      font-weight: 600;
+      margin-top: 1.5em;
+      margin-bottom: .5em;
+    }
+    .post-section h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1em;
+      margin-bottom: .5em;
+    }
+    .post-section p,
+    .post-section ul,
+    .post-section blockquote {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .post-section ul { padding-left: 1.25em; }
+    .post-section blockquote {
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 4px solid #b98d59;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* ==== Images ==== */
+    .post-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 24px auto;
+      border-radius: 8px;
+    }
+    .post-image-small {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 16px 0;
+      border-radius: 8px;
+    }
+
+    /* ==== Share Box ==== */
+    .post-sidebar .white-box {
+      padding: 24px;
+      border: 1px solid #b98d59;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .post-sidebar .white-box h3 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .post-sidebar .white-box a {
+      margin-right: 12px;
+      display: inline-block;
+    }
+  </style>
+  <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js"
+          data-pid="pAgzHzeLOIQQ4bxv" data-version="062024"></script>
+</head>
+
+<body class="body">
+  <!-- GTM (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW2ZTD56"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- ==== NAVBAR ==== -->
   <section class="header">
-    <div role="banner" class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400"
-         data-easing="ease" data-easing2="ease">
+    <div role="banner" class="navbar w-nav" data-animation="default" data-collapse="medium"
+         data-duration="400" data-easing="ease" data-easing2="ease">
       <div class="w-layout-hflex header-wrapper">
         <div class="header-left">
           <a href="../" class="brand w-nav-brand">
-            <img src="../images/gradewiz-logo.svg" alt="GradeWiz logo" style="width:250px;" loading="lazy">
+            <img src="../images/gradewiz-logo.svg" alt="GradeWiz logo" style="width:250px;">
           </a>
         </div>
         <div class="header-center">
@@ -47,228 +139,218 @@
           </nav>
         </div>
         <div class="header-right">
-          <a href="/login" class="menu-item-small w-button" style="color:black;border:1px solid black;">Login</a>
+          <a href="/login" class="menu-item-small w-button"
+             style="color:black;border:1px solid black;">Login</a>
           <a href="/login" class="btn-action w-button">Get Free trial</a>
           <div class="w-nav-button"><div class="w-icon-nav-menu"></div></div>
         </div>
       </div>
     </div>
     <div style="background:#b98d59;padding:10px;text-align:center;font-weight:bold;color:white;">
-      1-month free trials available. <a href="/login" style="color:white;text-decoration:underline;">Get free trial now!</a>
+      1-month free trials available. <a href="/login" style="color:white;text-decoration:underline;">
+      Get free trial now!</a>
     </div>
   </section>
 
-  <!-- CASE STUDY CONTENT -->
-  <div class="post-layout">
+  <!-- ==== CASE STUDY CONTENT ==== -->
+  <section id="blog" class="page gradbg">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="post-layout">
 
-    <!-- article -->
-    <article>
-      <header class="post-header">
-        <h1>Revolutionizing Assessment at Ithaca High School with GradeWiz AI</h1>
-        <div class="post-meta">By <strong>GradeWiz Team</strong> on <time datetime="2025-06-15">June 15, 2025</time></div>
-      </header>
+        <!-- Main Article -->
+        <article class="white-box-single">
+          <header class="post-header">
+            <h1>Revolutionizing Assessment at Ithaca High School with GradeWiz AI</h1>
+            <div class="post-meta">
+              By <strong>GradeWiz Team</strong> on <time datetime="2025-06-15">June 15, 2025</time>
+            </div>
+          </header>
 
-      <img src="../images/ithacaheader.jpg"
-           alt="GradeWiz × Ithaca City School District Case Study"
-           class="post-image" loading="lazy">
+          <!-- Header Image -->
+          <img src="../images/ithacaheader.jpg"
+               alt="GradeWiz × Ithaca City School District Case Study"
+               class="post-image" loading="lazy">
 
-      <!-- Executive Summary -->
-      <section>
-        <h2>Executive Summary</h2>
-        <p>Ithaca City School District has pioneered the integration of AI-powered grading through GradeWiz, transforming how over 20 teachers assess student work and provide feedback. Since active deployment began in spring 2025, the platform has graded over 5,000 submissions, saving teachers more than 500 hours while dramatically improving the quality and speed of student feedback.</p>
-      </section>
+          <!-- Executive Summary -->
+          <section class="post-section">
+            <h2 id="executive-summary">Executive Summary</h2>
+            <p>
+              Ithaca City School District has pioneered the integration of AI-powered grading through
+              GradeWiz, transforming how over 20 teachers assess student work and provide feedback.
+              Since active deployment began in spring 2025, the platform has graded over 5,000
+              submissions, saving teachers more than 500 hours while dramatically improving the quality
+              and speed of student feedback.
+            </p>
+          </section>
 
-      <!-- The Challenge -->
-      <section>
-        <h2>The Challenge</h2>
-        <ul class="list">
-          <li><strong>Time constraints:</strong> Teachers spent hours providing meaningful feedback on student assignments</li>
-          <li><strong>Inconsistent grading:</strong> Human bias and fatigue affected assessment quality</li>
-          <li><strong>Delayed feedback:</strong> Students often waited days or weeks for graded assignments</li>
-          <li><strong>Limited assignment frequency:</strong> Time constraints prevented teachers from assigning regular check-ins</li>
-          <li><strong>Classroom conflicts:</strong> Students frequently disputed grades, creating tension</li>
-        </ul>
-      </section>
+          <!-- The Challenge -->
+          <section class="post-section">
+            <h2 id="the-challenge">The Challenge</h2>
+            <ul>
+              <li><strong>Time constraints:</strong> Teachers spent hours providing meaningful feedback on student assignments.</li>
+              <li><strong>Inconsistent grading:</strong> Human bias and fatigue affected assessment quality.</li>
+              <li><strong>Delayed feedback:</strong> Students often waited days or weeks for graded assignments.</li>
+              <li><strong>Limited assignment frequency:</strong> Time constraints prevented teachers from assigning regular check-ins.</li>
+              <li><strong>Classroom conflicts:</strong> Students frequently disputed grades, creating tension.</li>
+            </ul>
+          </section>
 
-      <!-- The GradeWiz Solution -->
-      <section>
-        <h2>The GradeWiz Solution</h2>
-        <ul class="list">
-          <li><strong>Instant feedback generation:</strong> Students receive detailed, personalized feedback immediately</li>
-          <li><strong>Unbiased assessment:</strong> AI eliminates human bias in grading</li>
-          <li><strong>Targeted analytics:</strong> Teachers receive data on class-wide learning gaps and misconceptions</li>
-          <li><strong>Scalable implementation:</strong> Easy-to-use platform requiring minimal training</li>
-        </ul>
-      </section>
+          <!-- The GradeWiz Solution -->
+          <section class="post-section">
+            <h2 id="gradewiz-solution">The GradeWiz Solution</h2>
+            <ul>
+              <li><strong>Instant feedback generation:</strong> Students receive detailed, personalized feedback immediately.</li>
+              <li><strong>Unbiased assessment:</strong> AI eliminates human bias in grading.</li>
+              <li><strong>Targeted analytics:</strong> Teachers receive data on class-wide learning gaps and misconceptions.</li>
+              <li><strong>Scalable implementation:</strong> Easy-to-use platform requiring minimal training.</li>
+            </ul>
+            <!-- Group Photo -->
+            <img src="../images/ithaca-group.jpg"
+                 alt="Ithaca City School District Team"
+                 class="post-image-small" loading="lazy">
+          </section>
 
-      <!-- Implementation Results -->
-      <section>
-        <h2>Implementation Results</h2>
+          <!-- Implementation Results -->
+          <section class="post-section">
+            <h2 id="results">Implementation Results</h2>
 
-        <h3>Quantitative Impact</h3>
-        <ul class="list">
-          <li>5,000+ submissions graded across the district</li>
-          <li>500+ hours saved in teacher grading time</li>
-          <li>20+ teachers actively using the platform</li>
-          <li>3–6 hours saved weekly per teacher</li>
-          <li>40% of teachers have adjusted their instruction based on GradeWiz analytics</li>
-        </ul>
+            <h3>Quantitative Impact</h3>
+            <ul>
+              <li>5,000+ submissions graded across the district</li>
+              <li>500+ hours saved in teacher grading time</li>
+              <li>20+ teachers actively using the platform</li>
+              <li>3–6 hours saved weekly per teacher</li>
+              <li>40% of teachers have adjusted instruction based on GradeWiz analytics</li>
+            </ul>
 
-        <h3>Qualitative Transformations</h3>
-        <p><strong>Enhanced Student Experience:</strong> Biology teachers now assign daily paragraph recaps where students summarize their learning, receiving detailed same-day feedback through GradeWiz. This has fundamentally changed how students engage with course material and self-assess their understanding.</p>
+            <h3>Qualitative Transformations</h3>
+            <p><strong>Enhanced Student Experience:</strong> Biology teachers now assign daily paragraph recaps where students summarize their learning, receiving detailed same-day feedback through GradeWiz. This has fundamentally changed how students engage with course material and self-assess their understanding.</p>
+            <p><strong>Improved Classroom Dynamics:</strong> Correen Briggs noted a revolutionary shift in student-teacher interactions:</p>
+            <blockquote>
+              “Students don’t take losing points for mistakes personally, and instead they feel like the teacher and them are collaborating to help them produce great answers that give them full points!”
+            </blockquote>
+            <p><strong>Revolutionary Teaching Impact:</strong> Teacher R. Farmer compared GradeWiz’s classroom impact to purchasing her first computer, highlighting the transformational nature of the technology.</p>
+          </section>
 
-        <p><strong>Improved Classroom Dynamics:</strong> Correen Briggs noted a revolutionary shift in student-teacher interactions:</p>
-        <blockquote class="quote">
-          “Students don’t take losing points for mistakes personally, and instead they feel like the teacher and them are collaborating to help them produce great answers that give them full points!”
-        </blockquote>
+          <!-- Teacher Testimonials -->
+          <section class="post-section">
+            <h2 id="testimonials">Teacher Testimonials</h2>
 
-        <p><strong>Revolutionary Teaching Impact:</strong> Teacher R. Farmer compared GradeWiz’s classroom impact to purchasing her first computer, highlighting the transformational nature of the technology.</p>
-      </section>
+            <blockquote>
+              “The awesome part about GradeWiz is that it gives students valuable feedback. The feedback given meets the student at the level they are at rather than going over the entire problem... This then allows me as a teacher to truly get a third party evaluation of my students’ understanding.”
+            </blockquote>
+            <p><strong>— Michael Strickler</strong></p>
 
-      <!-- Teacher Testimonials -->
-      <section>
-        <h2>Teacher Testimonials</h2>
+            <blockquote>
+              “GradeWiz has fundamentally changed my classroom. I can provide almost instant MEANINGFUL feedback that the students can take and enhance their knowledge. On a personal level it has cut my grading down from hours to literal minutes.”
+            </blockquote>
+            <p><strong>— Brian Dwyer</strong></p>
 
-        <blockquote class="quote">
-          “The awesome part about GradeWiz is that it gives students valuable feedback. The feedback given meets the student at the level they are at rather than going over the entire problem... The GradeWiz grade takes that aspect out of it. This then allows me as a teacher to truly get a third party evaluation of my students’ understanding.”
-        </blockquote>
-        <p><strong>— Michael Strickler</strong></p>
+            <blockquote>
+              “GradeWiz offers me the opportunity to break down the specific content each question is asking and provides individual feedback back to my students based on their answers. It will allow me more time to focus on instruction.”
+            </blockquote>
+            <p><strong>— Kelly Haining</strong></p>
 
-        <blockquote class="quote">
-          “GradeWiz has fundamentally changed my classroom. I can provide almost instant MEANINGFUL feedback that the students can take and enhance their knowledge. On a personal level it has cut my grading down from hours to literal minutes.”
-        </blockquote>
-        <p><strong>— Brian Dwyer</strong></p>
+            <blockquote>
+              “GradeWiz significantly reduces the time it takes to finish sets of papers. No more falling behind by 2–3 labs. GradeWiz does an amazing job at finding the smallest errors and recommends ways for students to improve. GradeWiz works well with Google Classroom and students have no problems scanning their work.”
+            </blockquote>
+            <p><strong>— Matthew Wasilawski</strong></p>
+          </section>
 
-        <blockquote class="quote">
-          “GradeWiz offers me the opportunity to break down the specific content each question is asking and provides individual feedback back to my students based on their answers. It will allow me more time to focus on instruction.”
-        </blockquote>
-        <p><strong>— Kelly Haining</strong></p>
+          <!-- Advanced Analytics Driving Instruction -->
+          <section class="post-section">
+            <h2 id="analytics">Advanced Analytics Driving Instruction</h2>
+            <ul>
+              <li>Spot misconceptions early and address them same-day or next-day</li>
+              <li>Adjust instruction based on real-time student understanding data</li>
+              <li>Intervene proactively before small gaps become major learning obstacles</li>
+              <li>Compare performance across different teaching approaches</li>
+            </ul>
+          </section>
 
-        <blockquote class="quote">
-          “GradeWiz significantly reduces the time it takes to finish sets of papers. No more falling behind by 2–3 labs. GradeWiz does an amazing job at finding the smallest errors and recommends ways for students to improve. GradeWiz works well with Google Classroom and students have no problems scanning their work.”
-        </blockquote>
-        <p><strong>— Matthew Wasilawski</strong></p>
-      </section>
+          <!-- Future Initiatives -->
+          <section class="post-section">
+            <h2 id="future">Future Initiatives</h2>
+            <ul>
+              <li><strong>Regents exam preparation:</strong> Measuring impact on standardized test performance</li>
+              <li><strong>Predictive analytics:</strong> Delivering insights to educators for early intervention</li>
+              <li><strong>Pass rate prediction:</strong> Using AI to identify at-risk students before gaps widen</li>
+            </ul>
+          </section>
 
-      <!-- Advanced Analytics -->
-      <section>
-        <h2>Advanced Analytics Driving Instruction</h2>
-        <ul class="list">
-          <li>Spot misconceptions early and address them same-day or next-day</li>
-          <li>Adjust instruction based on real-time student understanding data</li>
-          <li>Intervene proactively before small gaps become major learning obstacles</li>
-          <li>Compare performance across different teaching approaches</li>
-        </ul>
-      </section>
+          <!-- Conclusion -->
+          <section class="post-section">
+            <h2>Conclusion</h2>
+            <p>
+              The partnership between GradeWiz and Ithaca City School District demonstrates how AI can transform education by making high-quality, personalized feedback scalable and immediate. With teachers saving hundreds of hours while students receive better, more timely feedback, this implementation serves as a model for districts seeking to leverage AI for educational improvement.
+            </p>
+          </section>
 
-      <!-- Future Initiatives -->
-      <section>
-        <h2>Future Initiatives</h2>
-        <ul class="list">
-          <li><strong>Regents exam preparation:</strong> Measuring impact on standardized test performance</li>
-          <li><strong>Predictive analytics:</strong> Delivering insights to educators for early intervention</li>
-          <li><strong>Pass rate prediction:</strong> Using AI to identify at-risk students before gaps widen</li>
-        </ul>
-      </section>
+          <!-- Special Acknowledgment -->
+          <section class="post-section">
+            <h2>Special Acknowledgment</h2>
+            <p>
+              We extend our heartfelt gratitude to Dr. Luvelle Brown, Superintendent, and Zachary Lind, Assistant Superintendent for Human Resources and Technology, whose visionary leadership and unwavering support have been instrumental in GradeWiz’s success at Ithaca City School District.
+            </p>
+          </section>
+        </article>
 
-      <!-- Conclusion -->
-      <section>
-        <h2>Conclusion</h2>
-        <p>
-          The partnership between GradeWiz and Ithaca City School District demonstrates how AI can transform education by making high-quality, personalized feedback scalable and immediate. With teachers saving hundreds of hours while students receive better, more timely feedback, this implementation serves as a model for districts seeking to leverage AI for educational improvement.
-        </p>
-      </section>
+        <!-- Sidebar Share Box -->
+        <aside class="post-sidebar">
+          <div class="white-box">
+            <h3>Share This Article</h3>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<%=encodeURIComponent(window.location.href)%>"
+               target="_blank" rel="noopener">
+              <img src="../images/linkedin.png" alt="LinkedIn" width="32" height="32" loading="lazy">
+            </a>
+            <a href="https://x.com/intent/tweet?url=<%=encodeURIComponent(window.location.href)%>"
+               target="_blank" rel="noopener">
+              <img src="../images/x.png" alt="X" width="32" height="32" loading="lazy">
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<%=encodeURIComponent(window.location.href)%>"
+               target="_blank" rel="noopener">
+              <img src="../images/fb.png" alt="Facebook" width="32" height="32" loading="lazy">
+            </a>
+          </div>
+        </aside>
 
-      <!-- Special Acknowledgment -->
-      <section>
-        <h2>Special Acknowledgment</h2>
-        <p>
-          We extend our heartfelt gratitude to Dr. Luvelle Brown, Superintendent, and Zachary Lind, Assistant Superintendent for Human Resources and Technology, whose visionary leadership and unwavering support have been instrumental in GradeWiz’s success at Ithaca City School District. Their belief in our platform from the early days, combined with their commitment to educational innovation, created the foundation for this transformative partnership.
-        </p>
-      </section>
-    </article>
+      </div> <!-- /.post-layout -->
+    </div>   <!-- /.container -->
+  </section>
 
-    <!-- SIDEBAR: Share -->
-    <aside class="post-sidebar">
-      <div class="white-box">
-        <h3>Share This Article</h3>
-    
-        <!-- LinkedIn -->
-        <a href="#"
-           onclick="window.open(
-             'https://www.linkedin.com/shareArticle?mini=true&url=' +
-             encodeURIComponent(window.location.href),
-             '_blank','noopener'
-           ); return false;"
-        >
-          <img src="../images/linkedin.png"
-               alt="LinkedIn"
-               width="32" height="32"
-               loading="lazy">
-        </a>
-    
-        <!-- X (formerly Twitter) -->
-        <a href="#"
-           onclick="window.open(
-             'https://x.com/intent/tweet?url=' +
-             encodeURIComponent(window.location.href),
-             '_blank','noopener'
-           ); return false;"
-        >
-          <img src="../images/x.png"
-               alt="X"
-               width="32" height="32"
-               loading="lazy">
-        </a>
-    
-        <!-- Facebook -->
-        <a href="#"
-           onclick="window.open(
-             'https://www.facebook.com/sharer/sharer.php?u=' +
-             encodeURIComponent(window.location.href),
-             '_blank','noopener'
-           ); return false;"
-        >
-          <img src="../images/fb.png"
-               alt="Facebook"
-               width="32" height="32"
-               loading="lazy">
-        </a>
-      </div>
-    </aside>
-    
-
-  </div><!-- /.post-layout -->
-
-  <!-- FOOTER -->
+  <!-- ==== FOOTER ==== -->
   <section class="footer">
     <div class="w-layout-hflex flex-block-6 gradbg">
       <div class="footer-1">
-        <img src="../images/gradewiz-logo.svg" alt="GradeWiz logo" class="image-5" loading="lazy">
+        <img src="../images/gradewiz-logo.svg" loading="lazy" alt="GradeWiz logo" class="image-5">
         <p class="footer-logo-paragraph">GradeWiz</p>
         <div class="w-layout-hflex flex-block-7">
-          <a href="https://www.linkedin.com/company/98695459/" target="_blank"><img src="../images/in.svg" alt="LinkedIn"></a>
-          <a href="https://www.youtube.com/@GradeWiz" target="_blank"><img src="../images/yb.svg" alt="YouTube"></a>
+          <a href="https://www.linkedin.com/company/98695459/" target="_blank">
+            <img src="../images/in.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.youtube.com/@GradeWiz" target="_blank">
+            <img src="../images/yb.svg" alt="YouTube">
+          </a>
         </div>
       </div>
       <div class="footer-2">
         <div class="text-weight-semibold text-color-primary">General</div>
         <a href="../#symphonymodel" class="link">Symphony Model</a>
-        <a href="../#features"       class="link">Features</a>
-        <a href="../#benefits"       class="link">Benefits</a>
-        <a href="../#contact"        class="link">Contact Us</a>
+        <a href="../#features" class="link">Features</a>
+        <a href="../#benefits" class="link">Benefits</a>
+        <a href="../#contact" class="link">Contact Us</a>
       </div>
       <div class="footer-3">
         <div class="text-weight-semibold text-color-primary">About Us</div>
-        <a href="../about-us.html"         class="link">Our Story</a>
-        <a href="../about-us.html#vision"  class="link">Our Vision</a>
+        <a href="../about-us.html" class="link">Our Story</a>
+        <a href="../about-us.html#vision" class="link">Our Vision</a>
         <a href="https://drive.google.com/file/d/1NKoiIL1RyEfr1OnKNgOdy-s5MG1xo1xH/view?usp=sharing"
            target="_blank" class="link">Our Pamphlet</a>
       </div>
       <div class="footer-4">
         <div class="text-weight-semibold text-color-primary">Legal</div>
         <a href="../privacy.html" class="link">Privacy Policy</a>
-        <a href="../terms.html"   class="link">Terms of Use</a>
+        <a href="../terms.html" class="link">Terms of Use</a>
       </div>
     </div>
     <div class="div-block-5">
@@ -283,6 +365,13 @@
   <script src="../js/webflow.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
